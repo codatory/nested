@@ -31,6 +31,7 @@ GEM
       multi_json (~> 1.0)
     ansi (1.4.2)
     arel (2.2.3)
+    bootstrap_forms (2.0.1)
     builder (3.0.0)
     coffee-rails (3.1.1)
       coffee-script (>= 2.2.0)
@@ -39,15 +40,28 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.1)
+    commonjs (0.2.6)
     erubis (2.7.0)
     execjs (1.3.2)
       multi_json (~> 1.0)
+    haml (3.1.5)
+    has_scope (0.5.1)
     hike (1.2.1)
     i18n (0.6.0)
+    inherited_resources (1.3.1)
+      has_scope (~> 0.5.0)
+      responders (~> 0.6)
     jquery-rails (1.0.19)
       railties (~> 3.0)
       thor (~> 0.14)
     json (1.7.1)
+    kgio (2.7.4)
+    less (2.2.1)
+      commonjs (~> 0.2.6)
+    less-rails (2.2.2)
+      actionpack (>= 3.1)
+      less (~> 2.2.0)
+    libv8 (3.3.10.4)
     mail (2.3.3)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -79,9 +93,12 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (~> 0.14.6)
+    raindrops (0.8.0)
     rake (0.9.2.2)
     rdoc (3.12)
       json (~> 1.4)
+    responders (0.9.1)
+      railties (~> 3.1)
     sass (3.1.17)
     sass-rails (3.1.6)
       actionpack (~> 3.1.0)
@@ -93,6 +110,8 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.6)
+    therubyracer (0.10.1)
+      libv8 (~> 3.3.10)
     thor (0.14.6)
     tilt (1.3.3)
     treetop (1.4.10)
@@ -100,19 +119,34 @@ GEM
       polyglot (>= 0.3.1)
     turn (0.8.3)
       ansi
+    twitter-bootstrap-rails (2.0.7)
+      actionpack (>= 3.1)
+      less-rails (~> 2.2.2)
+      railties (>= 3.1)
+      therubyracer (~> 0.10.1)
     tzinfo (0.3.33)
     uglifier (1.2.4)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
+    unicorn (4.3.1)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap_forms
   coffee-rails (~> 3.1.1)
+  haml
+  inherited_resources
   jquery-rails
   rails (= 3.1.4)
+  responders
   sass-rails (~> 3.1.5)
   sqlite3
   turn (~> 0.8.3)
+  twitter-bootstrap-rails
   uglifier (>= 1.0.3)
+  unicorn
